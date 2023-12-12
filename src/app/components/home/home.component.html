@@ -1,0 +1,10 @@
+<app-hero></app-hero>
+<section class="gradients container">
+@if (gradients) {
+  @for (gradient of gradients; track gradient.name) {
+    <app-gradient [gradient]="gradient"></app-gradient>
+  }
+}
+</section>
+<app-full-preview></app-full-preview>
+

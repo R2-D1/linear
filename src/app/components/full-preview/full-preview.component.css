@@ -1,0 +1,35 @@
+.full-preview {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+}
+
+.full-preview__header {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.full-preview__name {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  font-size: 30px;
+  font-family: var(--accent-font-family);
+  padding: 10px 20px 5px;
+}
+
+.full-preview__controls {
+  display: flex;
+  gap: 10px;
+}
+
+.full-preview__counter {
+  display: flex;
+  background-color: var(--primary-color);
+  align-items: center;
+  padding: 10px 20px 5px;
+  border-radius: 50px;
+  font-size: 30px;
+  font-family: var(--accent-font-family);
+}

@@ -1,7 +1,7 @@
 @if (gradient && gradient.code) {
   <div class="full-preview" [style]="gradient.code">
     <div class="full-preview__header container">
-      <div class="full-preview__name">Akony</div>
+      <div class="full-preview__name">{{ gradient.name }}</div>
       <div class="full-preview__controls">
         <button class="button button_icon" (click)="previousGradient()">
         <span class="button__content">

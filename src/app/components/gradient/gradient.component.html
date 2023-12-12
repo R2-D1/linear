@@ -1,6 +1,6 @@
 <div class="gradient">
   <div class="gradient__info">
-    <div class="gradient__name">Akony</div>
+    <div class="gradient__name">{{gradient.name}}</div>
     <div class="gradient__control">
       <button class="button button_icon">
         <span class="button__content">
@@ -19,13 +19,14 @@
       </button>
     </div>
     <div class="gradient__colors">
-      <div class="gradient__color">
-        <div class="gradient__color-code">#00ff12</div>
-      </div>
-      <div class="gradient__color">
-        <app-icon icon="arrow-right"></app-icon>
-        <div class="gradient__color-code">#00ff12</div>
-      </div>
+      @for (color of gradient.colors; track $index; let first = $first;) {
+        <div class="gradient__color">
+         @if (!first) {
+           <app-icon icon="arrow-right"></app-icon>
+          }
+          <div class="gradient__color-code">{{ color }}</div>
+        </div>
+      }
     </div>
   </div>
   <div class="gradient__example" [style]="gradient.code"></div>

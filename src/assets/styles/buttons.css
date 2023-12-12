@@ -26,7 +26,7 @@ button {
   font-size: 25px;
   border-radius: 50px;
   padding: 0;
-  box-shadow: 0 20px 20px 0 rgb(0 0 0 / 25%);
+  box-shadow: var(--main-box-shadow);
 
 
   &:before {
@@ -49,7 +49,7 @@ button {
     background-color: var(--secondary-color);
     padding: 2px;
     margin: -2px;
-    box-shadow: 0 20px 20px 0 rgb(0 0 0 / 25%);
+    box-shadow: var(--main-box-shadow);
 
     &::before {
       visibility: unset;
@@ -58,7 +58,7 @@ button {
   }
 
   &:active {
-    box-shadow: 0 15px 20px 0 rgb(0 0 0 / 25%);
+    box-shadow: var(--secondary-box-shadow);
     top: 2px;
   }
 }

@@ -8,15 +8,18 @@
   display: flex;
   padding-top: 20px;
   justify-content: space-between;
-  align-items: center;
 }
 
 .full-preview__name {
+  display: flex;
+  align-items: center;
   background-color: var(--primary-color);
+  padding: 10px 30px 5px;
   color: var(--accent-color);
   font-size: 30px;
   font-family: var(--accent-font-family);
-  padding: 10px 20px 5px;
+  border-radius: 50px;
+  box-shadow: var(--main-box-shadow);
 }
 
 .full-preview__controls {
@@ -26,10 +29,13 @@
 
 .full-preview__counter {
   display: flex;
-  background-color: var(--primary-color);
+  justify-content: center;
   align-items: center;
+  min-width: 240px;
   padding: 10px 20px 5px;
   border-radius: 50px;
   font-size: 30px;
   font-family: var(--accent-font-family);
+  background-color: var(--primary-color);
+  box-shadow: var(--main-box-shadow);
 }

@@ -29,5 +29,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
-          folder: dist/gradient
+          folder: dist/gradient/browser
           token: ${{ secrets.PAT }}

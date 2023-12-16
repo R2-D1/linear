@@ -138,7 +138,7 @@ export class GradientService {
         return false;
       }
 
-      if (filter.color && !gradient.colors.some(color => color.includes(filter.color || ''))) {
+      if (filter.color && !gradient.tags.some(tag => tag.includes(filter.color || ''))) {
         return false;
       }
 

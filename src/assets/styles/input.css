@@ -2,6 +2,7 @@
   background-color: var(--primary-color);
   border: none;
   padding: 15px 20px;
+  border-radius: 40px;
   color: var(--accent-color);
   font-family: var(--accent-font-family);
 

@@ -1,86 +1,100 @@
 [
   {
-    "name": "test 1",
-    "code": "background-image: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);",
+    "name": "instant",
+    "code": "background-image: linear-gradient(45deg, #8137b3, #fb1c1c, #ffb041);",
+    "colors": ["#8137b3", "#fb1c1c", "#ffb041"],
+    "tags": ["darkorchid", "red", "orange"]
+  },
+  {
+    "code": "background-image: linear-gradient(100deg, #c8ef6e 0%, #86e192 100%);",
+    "name": "Spring",
+    "tags": [
+      "lightgreen",
+      "mediumseagreen",
+      "yellowgreen"
+    ],
     "colors": [
-      "#6a11cb",
-      "#2575fc",
-      "#2575fc"
+      "#c8ef6e",
+      "#86e192"
     ]
   },
   {
-    "name": "test 2",
-    "code": "background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);",
+    "name": "Argo",
+    "code": "background-image: linear-gradient(-45deg, #030119, #7304c0, #e62bb5, #fde9f7);",
+    "colors": ["#030119", "#7304c0", "#e62bb5", "#fde9f7"],
+    "tags": ["black", "darkviolet", "palevioletred", "lavenderblush"]
+  },
+  {
+    "name": "Coral",
+    "code": "background-image: linear-gradient(-45deg, #2fe5d2, #ef8400, #f10079);",
+    "colors": ["#2fe5d2", "#ef8400", "#f10079"],
+    "tags": ["turquoise", "darkorange", "deeppink"]
+  },
+  {
+    "name": "DeepHaze",
+    "code": "background-image: linear-gradient(-225deg, #ae00ff 0%, #701cd8 48%, #3001ff 100%);",
+    "colors": ["#ae00ff", "#701cd8", "#3001ff"],
+    "tags": ["purple", "darkorchid", "blue"]
+  },
+  {
+    "name": "StarBurst",
+    "code": "background-image: linear-gradient(45deg, #201254 0%, #470f80 29%, #fd0c5b 67%, #fdf702 100%);",
+    "colors": ["#201254", "#470f80", "#fd0c5b", "#fdf702"],
+    "tags": ["midnightblue", "darkviolet", "red", "yellow"]
+  },
+  {
+    "name": "Aquastar",
+    "code": "background-image: linear-gradient(45deg, #02f1f4, #fa07fd);",
+    "colors": ["#02f1f4", "#fa07fd"],
+    "tags": ["aqua", "orchid"]
+  },
+
+  {
+    "name": "ChillFire",
+    "code": "background-image: linear-gradient(45deg, #ec3247, #0bdcd8);",
+    "colors": ["#ec3247", "#0bdcd8"],
+    "tags": ["crimson", "turquoise"]
+  },
+  {
+    "name": "Sushi",
+    "code": "background-image: linear-gradient(-45deg, #ec00a6, #84ff00);",
+    "colors": ["#ec00a6", "#84ff00"],
+    "tags": ["hotpink", "lawngreen"]
+  },
+  {
+    "name": "Skyvi",
+    "code": "background-image: linear-gradient(135deg, #6279e3 0%, #7649a4 100%);",
     "colors": [
-      "#b721ff",
-      "#21d4fd",
-      "#21d4fd",
-      "#21d4fd",
-      "#21d4fd"
+      "#6279e3",
+      "#7649a4"
+    ],
+    "tags": [
+      "mediumslateblue",
+      "darkorchid"
     ]
   },
   {
-    "name": "test 3",
-    "code": "background-image: linear-gradient(90deg, #9EFFEF 0%, #C2FFE4 100%);",
+    "name": "Lavros",
+    "code": "background-image: linear-gradient(45deg, #9782c7 0%, #efbae0 100%);",
     "colors": [
-      "#9EFFEF",
-      "#C2FFE4"
+      "#9782c7",
+      "#efbae0"
+    ],
+    "tags": [
+      "blueviolet",
+      "pink"
     ]
   },
   {
-    "name": "test 4",
-    "code": "background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);",
+    "name": "Aquant",
+    "code": "background-image: linear-gradient(180deg, #17e586 0%, #00a4fd 100%);",
     "colors": [
-      "#4facfe",
-      "#00f2fe"
-    ]
-  },
-  {
-    "name": "test 5",
-    "code": "background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);",
-    "colors": [
-      "#30cfd0",
-      "#330867"
-    ]
-  },
-  {
-    "name": "test 6",
-    "code": "background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);",
-    "colors": [
-      "#6a11cb",
-      "#2575fc"
-    ]
-  },
-  {
-    "name": "test 7",
-    "code": "background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);",
-    "colors": [
-      "#b721ff",
-      "#21d4fd"
-    ]
-  },
-  {
-    "name": "test 8",
-    "code": "background-image: linear-gradient(90deg, #9EFFEF 0%, #C2FFE4 100%);",
-    "colors": [
-      "#9EFFEF",
-      "#C2FFE4"
-    ]
-  },
-  {
-    "name": "test 9",
-    "code": "background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);",
-    "colors": [
-      "#4facfe",
-      "#00f2fe"
-    ]
-  },
-  {
-    "name": "test 10",
-    "code": "background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);",
-    "colors": [
-      "#30cfd0",
-      "#330867"
+      "#17e586",
+      "#00a4fd"
+    ],
+    "tags": [
+      "mediumspringgreen",
+      "dodgerblue"
     ]
   }
 ]

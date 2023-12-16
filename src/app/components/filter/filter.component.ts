@@ -1,12 +1,13 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormControl, FormGroup, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {FilterData, FilterForm} from "../../models/filter.form";
+import {IconComponent} from "../icon/icon.component";
 
 @Component({
   selector: 'app-filter',
   standalone: true,
   imports: [
-    FormsModule, ReactiveFormsModule
+    FormsModule, ReactiveFormsModule, IconComponent
   ],
   templateUrl: './filter.component.html',
   styleUrl: './filter.component.css'

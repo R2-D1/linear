@@ -4,6 +4,7 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  border-radius: 40px;;
 }
 
 .gradient__info {
@@ -18,16 +19,20 @@
 }
 
 .gradient__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
   padding: 10px 10px 5px;
   width: 100%;
   min-height: 50px;
   margin-left: auto;
-   font-size: 30px;
+   font-size: 25px;
   font-family: var(--accent-font-family);
   box-shadow: 0 20px 20px 0 rgb(0 0 0 / 25%);
   background-color: var(--primary-color);
   text-align: center;
+  border-radius: 40px;
 }
 
 .gradient__control {
@@ -43,23 +48,23 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px 2px;
 }
 
 .gradient__color {
   display: flex;
   align-items: center;
   color: var(--primary-color);
-  gap: 5px;
 }
 
 .gradient__color-code {
-  padding: 2px 15px;
+  padding: 5px 15px;
   color: var(--accent-color);
   background-color: var(--primary-color);
   box-shadow: 0 20px 20px 0 rgb(0 0 0 / 25%);
   font-family: monospace;
   font-size: 16px;
+  border-radius: 40px;
 }
 
 .gradient:hover .gradient__info {
@@ -83,8 +88,10 @@
   font-size: 25px;
   color: var(--warning-color);
   background-color: var(--primary-color);
+  border-radius: 50%;
 }
 
 .gradient__liked .gradient__like-btn {
   color: var(--warning-color);
+  background-image: linear-gradient(45deg, #8137b3, #fb1c1c, #ffb041);
 }

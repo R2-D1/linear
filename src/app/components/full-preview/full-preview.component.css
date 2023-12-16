@@ -19,6 +19,7 @@
   font-size: 30px;
   font-family: var(--accent-font-family);
   box-shadow: var(--main-box-shadow);
+  border-radius: 40px;
 }
 
 .full-preview__controls {
@@ -36,4 +37,5 @@
   font-family: var(--accent-font-family);
   background-color: var(--primary-color);
   box-shadow: var(--main-box-shadow);
+  border-radius: 40px;
 }

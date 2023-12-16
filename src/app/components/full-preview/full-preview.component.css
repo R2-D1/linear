@@ -18,7 +18,6 @@
   color: var(--accent-color);
   font-size: 30px;
   font-family: var(--accent-font-family);
-  border-radius: 50px;
   box-shadow: var(--main-box-shadow);
 }
 
@@ -33,7 +32,6 @@
   align-items: center;
   min-width: 240px;
   padding: 10px 20px 5px;
-  border-radius: 50px;
   font-size: 30px;
   font-family: var(--accent-font-family);
   background-color: var(--primary-color);

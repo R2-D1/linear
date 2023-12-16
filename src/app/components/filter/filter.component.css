@@ -1,0 +1,32 @@
+.filter {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-shadow: var(--main-box-shadow);
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.filter__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.filter__title {
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: 20px;
+  margin-left: 20px;
+  line-height: 1;
+}
+
+.filter__form {
+  display: flex;
+  gap: 5px;
+}
+
+.filter__input {
+  width: 50%;
+}

@@ -8,7 +8,6 @@
 
 .hero__title {
   margin-bottom: 50px;
-  font-family: var(--accent-font-family);
   font-size: 9.5vw;
 
   @media (min-width: 1680px) {
@@ -18,5 +17,4 @@
 
 .hero__subtitle {
   font-size: 30px;
-  font-family: var(--accent-font-family);
 }

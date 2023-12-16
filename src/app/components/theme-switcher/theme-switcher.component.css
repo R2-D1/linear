@@ -1,0 +1,72 @@
+.switcher {
+  position: relative;
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  border: none;
+  /*filter: invert(0);*/
+}
+
+.switcher__legend {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.switcher__radio {
+  appearance: none;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  transition: filter 0.1s ease-in;
+}
+
+.switcher__radio:focus {
+  outline: none;
+}
+
+.switcher__radio_light {
+  background-image: url(/assets/images/icons/library/sun.svg);
+}
+
+.switcher__radio_auto {
+  background-image: url(/assets/images/icons/library/auto.svg)
+}
+
+.switcher__radio_dark {
+  background-image: url(/assets/images/icons/library/moon.svg);
+}
+
+.switcher__status {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  box-shadow: 0 0 0 2px rgb(0 0 0 / 0.2);
+  border-radius: 18px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-image: url(/assets/images/icons/library/disc.svg);
+  background-size: 23px;
+  background-position: center;
+  transition: background-position 0.1s ease-in;
+}
+
+.switcher__radio:focus-visible ~ .switcher__status {
+  box-shadow: 0 0 0 2px black;
+}
+
+.switcher__radio_light:checked ~ .switcher__status {
+  background-position: left 3px center;
+}
+
+.switcher__radio_auto:checked ~ .switcher__status {
+  background-position: center center;
+}
+
+.switcher__radio_dark:checked ~ .switcher__status {
+  background-position: right 3px center;
+}

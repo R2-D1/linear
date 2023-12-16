@@ -1,7 +1,8 @@
-import { Injectable, inject } from '@angular/core';
+import {inject, Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {map, Observable, Subject} from "rxjs";
 import {Gradient} from "../models/gradient.model";
+import {FilterData} from "../models/filter.form";
 
 @Injectable({
   providedIn: 'root',
@@ -14,11 +15,14 @@ export class GradientService {
   private changeGradientsLengthSubject = new Subject<number>();
 
   private http: HttpClient = inject(HttpClient);
-  constructor() {}
+
+  constructor() {
+  }
 
   public getGradients() {
     return this.http.get<Gradient[]>('/assets/db.json').pipe(map((data) => {
       this.gradients = data;
+      this.initLikedGradients();
       this.onChangeGradientsLength$(this.gradients.length);
       return this.gradients;
     }));
@@ -88,6 +92,69 @@ export class GradientService {
   private setGradientForPreviewIndex(): undefined {
     if (this.gradientForPreview) {
       this.gradientForPreviewIndex = this.gradients.indexOf(this.gradientForPreview);
+    }
+  }
+
+  public like(gradient: Gradient): undefined {
+    gradient.liked = true;
+    let likedGradients: string[];
+    const likedGradientsStr = localStorage.getItem('likedGradients');
+
+    if (likedGradientsStr) {
+      likedGradients = JSON.parse(likedGradientsStr);
+      if (likedGradients.includes(gradient.name)) {
+        return;
+      }
+
+      likedGradients.push(gradient.name);
+    } else {
+      likedGradients = [gradient.name];
+    }
+
+    localStorage.setItem('likedGradients', JSON.stringify(likedGradients));
+  }
+
+  public dislike(gradient: Gradient): undefined {
+    gradient.liked = false;
+    let likedGradients: string[];
+    const likedGradientsStr = localStorage.getItem('likedGradients');
+
+    if (likedGradientsStr) {
+      likedGradients = JSON.parse(likedGradientsStr);
+      const likedGradientIndex = likedGradients.findIndex((name) => name == gradient.name);
+      if (likedGradientIndex) {
+        likedGradients.splice(likedGradientIndex, 1);
+      } else {
+        return;
+      }
+
+      localStorage.setItem('likedGradients', JSON.stringify(likedGradients));
+    }
+  }
+
+  public filterGradients(filter: FilterData): Gradient[] {
+    return this.gradients.filter(gradient => {
+      if (filter.name && !gradient.name.toLowerCase().includes(filter.name.toLowerCase())) {
+        return false;
+      }
+
+      if (filter.color && !gradient.colors.some(color => color.includes(filter.color || ''))) {
+        return false;
+      }
+
+      return true;
+    });
+  }
+
+  private initLikedGradients(): undefined {
+    const likedGradientsStr = localStorage.getItem('likedGradients');
+    if (likedGradientsStr) {
+      const likedGradients = JSON.parse(likedGradientsStr);
+      this.gradients.forEach(gradient => {
+        if (likedGradients.includes(gradient.name)) {
+          gradient.liked = true;
+        }
+      });
     }
   }
 }

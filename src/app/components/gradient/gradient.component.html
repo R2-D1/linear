@@ -1,10 +1,10 @@
-<div class="gradient">
+<div class="gradient" [ngClass]="{gradient__liked: gradient.liked}">
   <div class="gradient__info">
     <div class="gradient__name">{{gradient.name}}</div>
     <div class="gradient__control">
-      <button class="button button_icon">
+      <button class="button button_icon gradient__like-btn" (click)="like()">
         <span class="button__content">
-          <app-icon icon="download"></app-icon>
+          <app-icon icon="like"></app-icon>
         </span>
       </button>
       <button class="button button_icon" (click)="showFullPreview()">
@@ -30,4 +30,7 @@
     </div>
   </div>
   <div class="gradient__example" [style]="gradient.code"></div>
+  <div class="gradient__like" *ngIf="gradient.liked">
+    <app-icon icon="like"></app-icon>
+  </div>
 </div>

@@ -1,8 +1,19 @@
 :root {
   --accent-font-family: AKONY, Arial, sans-serif;
-  --primary-color: #000;
-  --accent-color: #fff;
+  --primary-color: #fff;
+  --accent-color:#000;
+  --warning-color: #ff00b2;
   --secondary-color: #1a1a1a;
   --main-box-shadow: 0 20px 20px 0 rgb(0 0 0 / 25%);
   --secondary-box-shadow: 0 15px 20px 0 rgb(0 0 0 / 25%);
+}
+
+.light-theme {
+  --primary-color: #fff;
+  --accent-color:#000;
+}
+
+.dark-theme {
+  --primary-color: #000;
+  --accent-color:#fff;
 }

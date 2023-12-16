@@ -1,5 +1,5 @@
 import {Component, ElementRef, inject, Input, ViewChild} from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule} from '@angular/common';
 import {Gradient} from "../../models/gradient.model";
 import {IconComponent} from "../icon/icon.component";
 import {FullPreviewComponent} from "../full-preview/full-preview.component";
@@ -14,17 +14,10 @@ import {GradientService} from "../../services/gradient.service";
 })
 export class GradientComponent {
   @Input() gradient!: Gradient;
-
-  public isDialogOpen = false;
-
   private gradientService: GradientService = inject(GradientService);
 
   public showFullPreview() {
     this.gradientService.showFullPreview(this.gradient);
-  }
-
-  public hideFullPreview() {
-    this.isDialogOpen = false;
   }
 
   public copyText() {
@@ -33,5 +26,13 @@ export class GradientComponent {
     }).catch(err => {
       console.error('Failed to copy text: ', err);
     });
+  }
+
+  public like() {
+    if (this.gradient.liked) {
+      this.gradientService.dislike(this.gradient);
+    } else {
+      this.gradientService.like(this.gradient);
+    }
   }
 }

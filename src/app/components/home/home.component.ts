@@ -5,24 +5,31 @@ import {Gradient} from "../../models/gradient.model";
 import {GradientComponent} from "../gradient/gradient.component";
 import {HeroComponent} from "../hero/hero.component";
 import {FullPreviewComponent} from "../full-preview/full-preview.component";
+import {FilterComponent} from "../filter/filter.component";
+import {FilterData} from "../../models/filter.form";
+import {HeaderComponent} from "../header/header.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, HeroComponent, GradientComponent, FullPreviewComponent],
+  imports: [CommonModule, HeroComponent, GradientComponent, FullPreviewComponent, FilterComponent, HeaderComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
   private gradientService = inject(GradientService);
   public gradients: Gradient[] | null = null;
-  ngOnInit() {
+
+  public ngOnInit() : undefined {
     this.gradientService.getGradients().subscribe({
       next: data => {
         this.gradients = data;
         this.gradientService.gradients = data;
-        console.log(this.gradients);
       }
     })
+  }
+
+  public onFilterChanged(filter: FilterData): undefined {
+    this.gradients = this.gradientService.filterGradients(filter);
   }
 }

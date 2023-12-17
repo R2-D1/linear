@@ -37,10 +37,9 @@
 
 .gradient__control {
   display: flex;
-  justify-content: flex-end;
-  gap: 5px;
+  align-items: flex-start;
+  gap: 10px;
   padding: 10px;
-  backdrop-filter: blur(10px);
   margin-bottom: 50px;
 }
 

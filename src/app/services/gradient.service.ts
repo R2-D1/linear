@@ -53,10 +53,9 @@ export class GradientService {
     this.changeGradientsLengthSubject.next(length);
   }
 
-  public copyText(text: string): undefined {
-    navigator.clipboard.writeText(text).then(() => {
-      console.log('Text copied to clipboard');
-    });
+  public async copyText(text: string): Promise<void> {
+    await navigator.clipboard.writeText(text);
+    console.log('Text copied to clipboard');
   }
 
   public nextGradientForPreview(): undefined {
@@ -66,10 +65,8 @@ export class GradientService {
       this.gradientForPreviewIndex = 0;
     }
 
-    console.log(this.gradientForPreviewIndex);
 
     this.gradientForPreview = this.gradients[this.gradientForPreviewIndex];
-    console.log(this.gradientForPreview);
     this.onChangeFullPreviewGradient$(this.gradientForPreview);
   }
 

@@ -12,22 +12,14 @@
           <app-icon icon="expand"></app-icon>
         </span>
       </button>
-      <button class="button button_icon" (click)="copyText()">
-        <span class="button__content">
-          <app-icon icon="copy"></app-icon>
-        </span>
-      </button>
+    <app-copy [text]="gradient.code"></app-copy>
     </div>
     <div class="gradient__colors">
       @for (color of gradient.colors;track $index;) {
         <div class="gradient__color">
           <div class="gradient__color-code">
             {{ color }}
-            <button class="button button_icon button_xs">
-              <span class="button__content">
-                <app-icon icon="copy"></app-icon>
-              </span>
-            </button>
+            <app-copy [text]="color" [xsButton]="true"></app-copy>
           </div>
           <div class="gradient__color-example" [style]="{backgroundColor: color}"></div>
         </div>

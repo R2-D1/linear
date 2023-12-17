@@ -26,7 +26,10 @@ button {
   font-size: 25px;
   border-radius: 50px;
   padding: 0;
-  box-shadow: var(--main-box-shadow);
+
+  &:not(&.button_xs) {
+    box-shadow: var(--main-box-shadow);
+  }
 
   &.button_xs {
     font-size: 15px;
@@ -44,7 +47,7 @@ button {
     left: 0;
     width: 400%;
     height: 100%;
-    background: linear-gradient(115deg,#00ff42, #b9ff00, #8000ff,#dbff00,#00ff42);
+    background: linear-gradient(115deg, #00ff42, #b9ff00, #8000ff, #dbff00, #00ff42);
     background-size: 50% 100%;
     visibility: hidden;
   }
@@ -53,21 +56,33 @@ button {
     outline: none;
   }
 
-  &:hover, &:focus {
-    background-color: var(--secondary-color);
-    padding: 2px;
-    margin: -2px;
-    box-shadow: var(--main-box-shadow);
+  &:not(&.button_success) {
+    &:hover, &:focus {
+      padding: 2px;
+      margin: -2px;
+      box-shadow: var(--main-box-shadow);
 
-    &::before {
-      visibility: unset;
-      animation: move 2s linear infinite;
+      &::before {
+        visibility: unset;
+        animation: move 2s linear infinite;
+      }
     }
   }
 
   &:active {
-    box-shadow: var(--secondary-box-shadow);
-    top: 2px;
+    &:not(&.button_xs) {
+      box-shadow: var(--secondary-box-shadow);
+      top: 2px;
+    }
+  }
+}
+
+.button_success {
+  padding: 0;
+
+  .button__content {
+    background-color: var(--success-color);
+    color: var(--main-color);
   }
 }
 

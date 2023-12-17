@@ -2,13 +2,15 @@ import {Component, inject, OnInit} from '@angular/core';
 import {IconComponent} from "../icon/icon.component";
 import {Gradient} from "../../models/gradient.model";
 import {GradientService} from "../../services/gradient.service";
+import {CopyComponent} from "../buttons/copy/copy.component";
 
 @Component({
   selector: 'app-full-preview',
   standalone: true,
-  imports: [
-    IconComponent
-  ],
+    imports: [
+        IconComponent,
+        CopyComponent
+    ],
   templateUrl: './full-preview.component.html',
   styleUrl: './full-preview.component.css'
 })
@@ -22,12 +24,6 @@ export class FullPreviewComponent implements OnInit {
   ngOnInit() {
     this.subscribeOnGradientChange();
     this.subscribeOnGradientsLengthChange();
-  }
-
-  public copyText() {
-    if (this.gradient) {
-      this.gradientService.copyText(this.gradient.code);
-    }
   }
 
   public hideFullPreview() {

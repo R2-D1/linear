@@ -28,6 +28,14 @@ button {
   padding: 0;
   box-shadow: var(--main-box-shadow);
 
+  &.button_xs {
+    font-size: 15px;
+
+    .button__content {
+      padding: 10px;
+    }
+  }
+
 
   &:before {
     content: "";

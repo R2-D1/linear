@@ -27,7 +27,7 @@
   width: 100%;
   min-height: 50px;
   margin-left: auto;
-   font-size: 25px;
+  font-size: 25px;
   font-family: var(--accent-font-family);
   box-shadow: 0 20px 20px 0 rgb(0 0 0 / 25%);
   background-color: var(--primary-color);
@@ -48,23 +48,58 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px 2px;
+  gap: 10px;
 }
 
 .gradient__color {
+  position: relative;
   display: flex;
   align-items: center;
   color: var(--primary-color);
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 100%;
+    bottom: 100%;
+  }
+
+  &:hover {
+    .gradient__color-code {
+      display: flex;
+    }
+
+    &:before {
+      height: 100%;
+    }
+  }
+}
+
+.gradient__color-example {
+  padding: 5px 15px;
+  box-shadow: 0 20px 20px 0 rgb(0 0 0 / 25%);
+  border-radius: 40px;
+  width: 60px;
+  height: 25px;
 }
 
 .gradient__color-code {
-  padding: 5px 15px;
-  color: var(--accent-color);
+  position: absolute;
+  display: none;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 2px 2px 15px;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translate(-50%);
   background-color: var(--primary-color);
-  box-shadow: 0 20px 20px 0 rgb(0 0 0 / 25%);
+  color: var(--accent-color);
+  border-radius: 50px;
   font-family: monospace;
-  font-size: 16px;
-  border-radius: 40px;
+  font-size: 15px;
+  transition-duration: 1s;
+  transition-delay: 1s;
 }
 
 .gradient:hover .gradient__info {

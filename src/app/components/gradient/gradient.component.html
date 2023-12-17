@@ -1,6 +1,6 @@
 <div class="gradient" [ngClass]="{gradient__liked: gradient.liked}">
   <div class="gradient__info">
-    <div class="gradient__name">{{gradient.name}}</div>
+    <div class="gradient__name">{{ gradient.name }}</div>
     <div class="gradient__control">
       <button class="button button_icon gradient__like-btn" (click)="like()">
         <span class="button__content">
@@ -19,12 +19,17 @@
       </button>
     </div>
     <div class="gradient__colors">
-      @for (color of gradient.colors; track $index; let first = $first;) {
+      @for (color of gradient.colors;track $index;) {
         <div class="gradient__color">
-         @if (!first) {
-           <app-icon icon="arrow-right"></app-icon>
-          }
-          <div class="gradient__color-code">{{ color }}</div>
+          <div class="gradient__color-code">
+            {{ color }}
+            <button class="button button_icon button_xs">
+              <span class="button__content">
+                <app-icon icon="copy"></app-icon>
+              </span>
+            </button>
+          </div>
+          <div class="gradient__color-example" [style]="{backgroundColor: color}"></div>
         </div>
       }
     </div>

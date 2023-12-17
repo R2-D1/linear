@@ -1,12 +1,9 @@
 .dark-theme {
   .switcher__status {
     filter: invert(0);
-    /*background-color: #000;*/
   }
 
   .switcher__radio {
-    /*filter: invert(0);*/
-
     &:checked {
       filter: invert(1);
     }

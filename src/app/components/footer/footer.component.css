@@ -1,0 +1,22 @@
+.footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-size: 14px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__col {
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: inherit;
+}

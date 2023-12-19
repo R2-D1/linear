@@ -2,8 +2,18 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hero__container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero__title {
@@ -17,4 +27,24 @@
 
 .hero__subtitle {
   font-size: 30px;
+}
+
+.hero__label {
+  font-size: 10px;
+}
+
+.hero__label_vertical {
+  transform: rotate(90deg);
+  transform-origin: right;
+  position: absolute;
+}
+
+.hero__label_vertical_left {
+  bottom: 100%;
+  left: -60px;
+}
+
+.hero__label_vertical_right {
+  bottom: 100%;
+  right: 25px;
 }

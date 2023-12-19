@@ -1,0 +1,47 @@
+.arrow-down {
+  height: 70px;
+  width: 80px;
+  overflow: hidden;
+}
+
+.arrow-down__icons {
+  animation: arrow-down 1s infinite linear;
+}
+
+.arrow-down__icon {
+  position: relative;
+  height: 35px;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+
+    display: block;
+    width: 40px;
+    height: 10px;
+    background-color: var(--accent-color);
+  }
+
+  &::before {
+    transform: rotate(40deg);
+    right: 50%;
+  }
+
+  &::after {
+    left: 50%;
+    transform: rotate(-40deg);
+  }
+}
+
+@keyframes arrow-down {
+  0% {
+    transform: translateY(-33.333%);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

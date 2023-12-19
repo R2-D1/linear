@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+  border-radius: 5px;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(-225deg, #ae00ff, #701cd8, #3001ff, #ae00ff);
+  transition: .2s ease-out background-position-x;
+  background-size: 200%;
+
+  &:hover {
+    background-position-x: -50%;
+  }
+}

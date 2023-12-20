@@ -7,7 +7,7 @@
     "build": "ng build && npm run optimize-svg",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "optimize-svg": "svgo -f ./dist/gradient/browser/assets --recursive",
+    "optimize-svg": "svgo -f ./dist/gradient/browser/assets --recursive --exclude 'sprite.svg'",
     "generate-sprite": "node generate-sprite.js"
   },
   "private": true,

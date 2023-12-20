@@ -18,7 +18,7 @@
 
 .hero__title {
   margin-bottom: 50px;
-  font-size: 9.5vw;
+  font-size: 12vw;
 
   @media (min-width: 1680px) {
     font-size: 200px;

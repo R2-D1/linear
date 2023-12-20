@@ -32,9 +32,9 @@
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
-  background-image: radial-gradient(circle, rgba(106, 17, 192, 1) 14%, rgba(251, 255, 0, 1) 33%, rgba(0, 255, 79, 1) 54%, rgb(255, 251, 0) 73%, rgba(69, 223, 220, 1) 86%, rgba(106, 17, 192, 1) 100%);;
-  background-size: 200% 200%;
-  animation: rotate-gradient 100s linear infinite;
+  background-image: linear-gradient(90deg, #17e586, #00a4fd, #ae00ff, #701cd8, #3001ff, #fb1c1c, #ffb041, #17e586);
+  background-size: 400%;
+  animation: rotate-gradient 50s linear infinite;
 }
 
 

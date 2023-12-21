@@ -1,7 +1,7 @@
 import {Component, inject, Input} from '@angular/core';
-import {IconComponent} from "../../icon/icon.component";
-import {GradientService} from "../../../services/gradient.service";
-import {NgClass} from "@angular/common";
+import {IconComponent} from '../../icon/icon.component';
+import {GradientService} from '../../../services/gradient.service';
+import {NgClass} from '@angular/common';
 
 @Component({
   selector: 'app-copy',

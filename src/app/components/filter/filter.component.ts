@@ -1,7 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {FormControl, FormGroup, FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {FilterData, FilterForm} from "../../models/filter.form";
-import {IconComponent} from "../icon/icon.component";
+import {FormControl, FormGroup, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {FilterData, FilterForm} from '../../models/filter.form';
+import {IconComponent} from '../icon/icon.component';
 
 @Component({
   selector: 'app-filter',
@@ -25,7 +25,7 @@ export class FilterComponent implements OnInit {
   }
 
   private applyFilter(): undefined {
-      this.filterForm.valueChanges.subscribe(value => {
+      this.filterForm.valueChanges.subscribe(() => {
         const formValue: FilterData = this.filterForm.getRawValue() ;
         this.filterChange.emit(formValue);
       });

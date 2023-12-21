@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ThemeSwitcherComponent} from "../theme-switcher/theme-switcher.component";
+import {ThemeSwitcherComponent} from '../theme-switcher/theme-switcher.component';
 
 @Component({
   selector: 'app-header',

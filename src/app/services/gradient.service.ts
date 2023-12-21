@@ -1,8 +1,8 @@
 import {inject, Injectable} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {map, Observable, Subject} from "rxjs";
-import {Gradient} from "../models/gradient.model";
-import {FilterData} from "../models/filter.form";
+import {HttpClient} from '@angular/common/http';
+import {map, Observable, Subject} from 'rxjs';
+import {Gradient} from '../models/gradient.model';
+import {FilterData} from '../models/filter.form';
 
 @Injectable({
   providedIn: 'root',

@@ -38,7 +38,7 @@ export class ThemeSwitcherComponent  implements OnInit, OnDestroy {
     this.currentTheme = 'auto';
   }
 
-  private colorSchemeChanged(e: MediaQueryListEvent) {
+  private colorSchemeChanged() {
     if (this.currentTheme === 'auto') {
       this.setAutoTheme();
     }

@@ -1,10 +1,10 @@
-import {Component, ElementRef, inject, Input, ViewChild} from '@angular/core';
+import {Component, inject, Input} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {Gradient} from "../../models/gradient.model";
-import {IconComponent} from "../icon/icon.component";
-import {FullPreviewComponent} from "../full-preview/full-preview.component";
-import {GradientService} from "../../services/gradient.service";
-import {CopyComponent} from "../buttons/copy/copy.component";
+import {Gradient} from '../../models/gradient.model';
+import {IconComponent} from '../icon/icon.component';
+import {FullPreviewComponent} from '../full-preview/full-preview.component';
+import {GradientService} from '../../services/gradient.service';
+import {CopyComponent} from '../buttons/copy/copy.component';
 
 @Component({
   selector: 'app-gradient',

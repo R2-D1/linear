@@ -8,10 +8,9 @@ describe('GradientComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GradientComponent]
-    })
-    .compileComponents();
-    
+      imports: [GradientComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(GradientComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

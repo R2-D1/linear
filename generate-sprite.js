@@ -9,8 +9,8 @@ const spriter = new SVGSpriter({
   mode: {
     symbol: {
       sprite: outputFile,
-    }
-  }
+    },
+  },
 });
 
 // Directory containing SVG files
@@ -22,7 +22,8 @@ fs.readdirSync(svgDir).forEach(file => {
     let svgContent = fs.readFileSync(filePath, 'utf8');
 
     // Replace fill and stroke attributes with currentColor
-    svgContent = svgContent.replace(/fill="(?!none)[^"]+"/gi, 'fill="currentColor"')
+    svgContent = svgContent
+      .replace(/fill="(?!none)[^"]+"/gi, 'fill="currentColor"')
       .replace(/stroke="(?!none)[^"]+"/gi, 'stroke="currentColor"');
 
     spriter.add(filePath, file, svgContent);
@@ -32,7 +33,10 @@ fs.readdirSync(svgDir).forEach(file => {
 spriter.compile((error, result) => {
   for (let mode in result) {
     for (let resource in result[mode]) {
-      fs.writeFileSync(path.join(__dirname, result[mode][resource].relative), result[mode][resource].contents);
+      fs.writeFileSync(
+        path.join(__dirname, result[mode][resource].relative),
+        result[mode][resource].contents
+      );
     }
   }
 });

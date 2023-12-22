@@ -1,9 +1,12 @@
-<button class="button button_icon" [ngClass]="{button_success: copySuccess, button_xs: xsButton }"  (click)="copyText()">
-        <span class="button__content">
-          @if (copySuccess) {
-            <app-icon icon="check"></app-icon>
-          } @else {
-            <app-icon icon="copy"></app-icon>
-          }
-        </span>
+<button
+  class="button button_icon"
+  [ngClass]="{ button_success: copySuccess, button_xs: xsButton }"
+  (click)="copyText()">
+  <span class="button__content">
+    @if (copySuccess) {
+      <app-icon icon="check"></app-icon>
+    } @else {
+      <app-icon icon="copy"></app-icon>
+    }
+  </span>
 </button>

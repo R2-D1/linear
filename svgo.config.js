@@ -5,8 +5,8 @@ module.exports = {
       params: {
         overrides: {
           cleanupIds: false,
-        }
-      }
-    }
-  ]
+        },
+      },
+    },
+  ],
 };

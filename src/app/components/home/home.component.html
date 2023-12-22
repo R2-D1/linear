@@ -3,12 +3,11 @@
 <app-hero></app-hero>
 <app-filter (filterChange)="onFilterChanged($event)" id="filter"></app-filter>
 <main class="gradients container">
-@if (gradients) {
-  @for (gradient of gradients; track gradient.name) {
-    <app-gradient [gradient]="gradient"></app-gradient>
+  @if (gradients) {
+    @for (gradient of gradients; track gradient.name) {
+      <app-gradient [gradient]="gradient"></app-gradient>
+    }
   }
-}
 </main>
 <app-footer></app-footer>
 <app-full-preview></app-full-preview>
-

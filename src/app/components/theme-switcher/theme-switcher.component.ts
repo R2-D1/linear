@@ -1,13 +1,13 @@
-import {Component, OnInit, OnDestroy} from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-theme-switcher',
   templateUrl: './theme-switcher.component.html',
   standalone: true,
-  styleUrls: ['./theme-switcher.component.css']
+  styleUrls: ['./theme-switcher.component.css'],
 })
-export class ThemeSwitcherComponent  implements OnInit, OnDestroy {
+export class ThemeSwitcherComponent implements OnInit, OnDestroy {
   public currentTheme!: string;
   private colorSchemeQueryList!: MediaQueryList;
 
@@ -15,12 +15,16 @@ export class ThemeSwitcherComponent  implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.currentTheme = this.themeService.loadTheme();
-    this.colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+    this.colorSchemeQueryList = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    );
     this.colorSchemeQueryList.addListener(this.colorSchemeChanged.bind(this));
   }
 
   ngOnDestroy() {
-    this.colorSchemeQueryList.removeListener(this.colorSchemeChanged.bind(this));
+    this.colorSchemeQueryList.removeListener(
+      this.colorSchemeChanged.bind(this)
+    );
   }
 
   public setLightTheme() {

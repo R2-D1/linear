@@ -4,12 +4,14 @@
       <div class="full-preview__name">{{ gradient.name }}</div>
       <div class="full-preview__controls">
         <button class="button button_icon" (click)="previousGradient()">
-        <span class="button__content">
-          <app-icon icon="arrow-left"></app-icon>
-        </span>
+          <span class="button__content">
+            <app-icon icon="arrow-left"></app-icon>
+          </span>
         </button>
         <div class="full-preview__counter">
-          <span class="full-preview__counter-current">{{ currentGradientIndex + 1 }}</span>
+          <span class="full-preview__counter-current">{{
+            currentGradientIndex + 1
+          }}</span>
           <span class="full-preview__counter-separator">/</span>
           <span class="full-preview__counter-total">{{ gradientsLength }}</span>
         </div>
@@ -18,7 +20,7 @@
             <app-icon icon="arrow-right"></app-icon>
           </span>
         </button>
-<!--        <app-copy [text]="gradient.code"></app-copy>-->
+        <!--        <app-copy [text]="gradient.code"></app-copy>-->
         <button class="button button_icon" (click)="hideFullPreview()">
           <span class="button__content">
             <app-icon icon="close"></app-icon>

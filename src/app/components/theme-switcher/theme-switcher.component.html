@@ -1,7 +1,28 @@
 <fieldset class="switcher">
   <legend class="switcher__legend">Scheme</legend>
-  <input class="switcher__radio switcher__radio_light" type="radio" name="color-scheme" value="light" aria-label="Light" (change)="setLightTheme()" [checked]="currentTheme === 'light'">
-  <input class="switcher__radio switcher__radio_auto" type="radio" name="color-scheme" value="auto" aria-label="System" (change)="setAutoTheme()" [checked]="currentTheme === 'auto'">
-  <input class="switcher__radio switcher__radio_dark" type="radio" name="color-scheme" value="dark" aria-label="Dark" (change)="setDarkTheme()" [checked]="currentTheme === 'dark'">
+  <input
+    class="switcher__radio switcher__radio_light"
+    type="radio"
+    name="color-scheme"
+    value="light"
+    aria-label="Light"
+    (change)="setLightTheme()"
+    [checked]="currentTheme === 'light'" />
+  <input
+    class="switcher__radio switcher__radio_auto"
+    type="radio"
+    name="color-scheme"
+    value="auto"
+    aria-label="System"
+    (change)="setAutoTheme()"
+    [checked]="currentTheme === 'auto'" />
+  <input
+    class="switcher__radio switcher__radio_dark"
+    type="radio"
+    name="color-scheme"
+    value="dark"
+    aria-label="Dark"
+    (change)="setDarkTheme()"
+    [checked]="currentTheme === 'dark'" />
   <div class="switcher__status"></div>
 </fieldset>

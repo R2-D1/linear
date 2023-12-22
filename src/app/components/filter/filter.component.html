@@ -1,11 +1,19 @@
 <section class="filter">
   <div class="container">
     <div class="filter__body">
-    <h2 class="filter__title"><app-icon icon="filter"></app-icon> Filter</h2>
-    <form [formGroup]="filterForm" class="filter__form">
-      <input class="input filter__input" type="text" formControlName="name" placeholder="Name">
-      <input class="input filter__input" type="text" formControlName="color" placeholder="Color">
-    </form>
+      <h2 class="filter__title"><app-icon icon="filter"></app-icon> Filter</h2>
+      <form [formGroup]="filterForm" class="filter__form">
+        <input
+          class="input filter__input"
+          type="text"
+          formControlName="name"
+          placeholder="Name" />
+        <input
+          class="input filter__input"
+          type="text"
+          formControlName="color"
+          placeholder="Color" />
+      </form>
     </div>
   </div>
 </section>

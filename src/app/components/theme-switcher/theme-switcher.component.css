@@ -34,7 +34,7 @@
 }
 
 .switcher__radio_auto {
-  background-image: url(/assets/images/icons/library/auto.svg)
+  background-image: url(/assets/images/icons/library/auto.svg);
 }
 
 .switcher__radio_dark {

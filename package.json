@@ -9,7 +9,9 @@
     "test": "ng test",
     "optimize-svg": "svgo -f ./dist/gradient/browser/assets --recursive --exclude 'sprite.svg'",
     "generate-sprite": "node generate-sprite.js",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "lint:fix": "ng lint --fix",
+    "prettier": "npx prettier --write ."
   },
   "private": true,
   "dependencies": {
@@ -38,12 +40,16 @@
     "@typescript-eslint/eslint-plugin": "6.13.1",
     "@typescript-eslint/parser": "6.13.1",
     "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.1",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "prettier": "^3.1.1",
+    "prettier-eslint": "^16.2.0",
     "svg-sprite": "^2.0.2",
     "svgo": "^3.1.0",
     "typescript": "~5.2.2"

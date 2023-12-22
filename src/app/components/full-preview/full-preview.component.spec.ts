@@ -8,10 +8,9 @@ describe('FullPreviewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FullPreviewComponent]
-    })
-    .compileComponents();
-    
+      imports: [FullPreviewComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(FullPreviewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

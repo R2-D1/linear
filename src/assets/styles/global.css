@@ -1,8 +1,11 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
-.page, .page__body {
+.page,
+.page__body {
   min-height: 100%;
 }
 
@@ -32,11 +35,20 @@
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(90deg, #17e586, #00a4fd, #ae00ff, #701cd8, #3001ff, #fb1c1c, #ffb041, #17e586);
+  background-image: linear-gradient(
+    90deg,
+    #17e586,
+    #00a4fd,
+    #ae00ff,
+    #701cd8,
+    #3001ff,
+    #fb1c1c,
+    #ffb041,
+    #17e586
+  );
   background-size: 400%;
   animation: rotate-gradient 50s linear infinite;
 }
-
 
 @keyframes rotate-gradient {
   0% {
@@ -49,4 +61,3 @@
     background-position: 0% 50%;
   }
 }
-

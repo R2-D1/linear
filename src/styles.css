@@ -1,17 +1,22 @@
-@import url("./assets/styles/variables.css");
-@import url("./assets/styles/buttons.css");
-@import url("./assets/styles/global.css");
-@import url("./assets/styles/fonts.css");
-@import url("./assets/styles/input.css");
-@import url("./assets/styles/theme.css");
-@import url("./assets/styles/link.css");
-@import url("./assets/styles/scroll-down.css");
-
+@import url('./assets/styles/variables.css');
+@import url('./assets/styles/buttons.css');
+@import url('./assets/styles/global.css');
+@import url('./assets/styles/fonts.css');
+@import url('./assets/styles/input.css');
+@import url('./assets/styles/theme.css');
+@import url('./assets/styles/link.css');
+@import url('./assets/styles/scroll-down.css');
 
 @keyframes gradientAnimation {
-  0% { stop-color: blue; }
-  50% { stop-color: green; }
-  100% { stop-color: blue; }
+  0% {
+    stop-color: blue;
+  }
+  50% {
+    stop-color: green;
+  }
+  100% {
+    stop-color: blue;
+  }
 }
 
 #grad1 stop {

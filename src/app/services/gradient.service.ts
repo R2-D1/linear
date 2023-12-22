@@ -1,8 +1,8 @@
-import {inject, Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {map, Observable, Subject} from 'rxjs';
-import {Gradient} from '../models/gradient.model';
-import {FilterData} from '../models/filter.form';
+import { inject, Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { map, Observable, Subject } from 'rxjs';
+import { Gradient } from '../models/gradient.model';
+import { FilterData } from '../models/filter.form';
 
 @Injectable({
   providedIn: 'root',
@@ -16,16 +16,17 @@ export class GradientService {
 
   private http: HttpClient = inject(HttpClient);
 
-  constructor() {
-  }
+  constructor() {}
 
   public getGradients() {
-    return this.http.get<Gradient[]>('/assets/db.json').pipe(map((data) => {
-      this.gradients = data;
-      this.initLikedGradients();
-      this.onChangeGradientsLength$(this.gradients.length);
-      return this.gradients;
-    }));
+    return this.http.get<Gradient[]>('/assets/db.json').pipe(
+      map(data => {
+        this.gradients = data;
+        this.initLikedGradients();
+        this.onChangeGradientsLength$(this.gradients.length);
+        return this.gradients;
+      })
+    );
   }
 
   public showFullPreview(gradient?: Gradient): undefined {
@@ -65,7 +66,6 @@ export class GradientService {
       this.gradientForPreviewIndex = 0;
     }
 
-
     this.gradientForPreview = this.gradients[this.gradientForPreviewIndex];
     this.onChangeFullPreviewGradient$(this.gradientForPreview);
   }
@@ -88,7 +88,9 @@ export class GradientService {
 
   private setGradientForPreviewIndex(): undefined {
     if (this.gradientForPreview) {
-      this.gradientForPreviewIndex = this.gradients.indexOf(this.gradientForPreview);
+      this.gradientForPreviewIndex = this.gradients.indexOf(
+        this.gradientForPreview
+      );
     }
   }
 
@@ -118,7 +120,9 @@ export class GradientService {
 
     if (likedGradientsStr) {
       likedGradients = JSON.parse(likedGradientsStr);
-      const likedGradientIndex = likedGradients.findIndex((name) => name == gradient.name);
+      const likedGradientIndex = likedGradients.findIndex(
+        name => name == gradient.name
+      );
       if (likedGradientIndex) {
         likedGradients.splice(likedGradientIndex, 1);
       } else {
@@ -131,11 +135,17 @@ export class GradientService {
 
   public filterGradients(filter: FilterData): Gradient[] {
     return this.gradients.filter(gradient => {
-      if (filter.name && !gradient.name.toLowerCase().includes(filter.name.toLowerCase())) {
+      if (
+        filter.name &&
+        !gradient.name.toLowerCase().includes(filter.name.toLowerCase())
+      ) {
         return false;
       }
 
-      if (filter.color && !gradient.tags.some(tag => tag.includes(filter.color || ''))) {
+      if (
+        filter.color &&
+        !gradient.tags.some(tag => tag.includes(filter.color || ''))
+      ) {
         return false;
       }
 

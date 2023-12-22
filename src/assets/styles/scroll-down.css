@@ -12,7 +12,8 @@
   position: relative;
   height: 35px;
 
-  &::before, &::after {
+  &::before,
+  &::after {
     content: '';
     position: absolute;
     top: 12px;

@@ -8,15 +8,8 @@
   {
     "code": "background-image: linear-gradient(100deg, #c8ef6e 0%, #86e192 100%);",
     "name": "Spring",
-    "tags": [
-      "lightgreen",
-      "mediumseagreen",
-      "yellowgreen"
-    ],
-    "colors": [
-      "#c8ef6e",
-      "#86e192"
-    ]
+    "tags": ["lightgreen", "mediumseagreen", "yellowgreen"],
+    "colors": ["#c8ef6e", "#86e192"]
   },
   {
     "name": "Argo",
@@ -64,37 +57,19 @@
   {
     "name": "Skyvi",
     "code": "background-image: linear-gradient(135deg, #6279e3 0%, #7649a4 100%);",
-    "colors": [
-      "#6279e3",
-      "#7649a4"
-    ],
-    "tags": [
-      "mediumslateblue",
-      "darkorchid"
-    ]
+    "colors": ["#6279e3", "#7649a4"],
+    "tags": ["mediumslateblue", "darkorchid"]
   },
   {
     "name": "Lavros",
     "code": "background-image: linear-gradient(45deg, #9782c7 0%, #efbae0 100%);",
-    "colors": [
-      "#9782c7",
-      "#efbae0"
-    ],
-    "tags": [
-      "blueviolet",
-      "pink"
-    ]
+    "colors": ["#9782c7", "#efbae0"],
+    "tags": ["blueviolet", "pink"]
   },
   {
     "name": "Aquant",
     "code": "background-image: linear-gradient(180deg, #17e586 0%, #00a4fd 100%);",
-    "colors": [
-      "#17e586",
-      "#00a4fd"
-    ],
-    "tags": [
-      "mediumspringgreen",
-      "dodgerblue"
-    ]
+    "colors": ["#17e586", "#00a4fd"],
+    "tags": ["mediumspringgreen", "dodgerblue"]
   }
 ]

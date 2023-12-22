@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'AKONY';
-  src: url('/assets/fonts/akony/AKONY.otf') format('opentype'),
-  url('/assets/fonts/akony/AKONY.ttf') format('truetype');
+  src:
+    url('/assets/fonts/akony/AKONY.otf') format('opentype'),
+    url('/assets/fonts/akony/AKONY.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

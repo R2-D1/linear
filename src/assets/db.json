@@ -1,75 +1,388 @@
 [
   {
-    "name": "instant",
+    "name": "Insta",
     "code": "background-image: linear-gradient(45deg, #8137b3, #fb1c1c, #ffb041);",
-    "colors": ["#8137b3", "#fb1c1c", "#ffb041"],
-    "tags": ["darkorchid", "red", "orange"]
+    "colors": [
+      "#8137b3",
+      "#fb1c1c",
+      "#ffb041"
+    ],
+    "tags": [
+      "darkorchid",
+      "crimson",
+      "orangered",
+      "orange",
+      "red",
+      "orange"
+    ]
   },
   {
+    "name": "Yoda",
     "code": "background-image: linear-gradient(100deg, #c8ef6e 0%, #86e192 100%);",
-    "name": "Spring",
-    "tags": ["lightgreen", "mediumseagreen", "yellowgreen"],
-    "colors": ["#c8ef6e", "#86e192"]
+    "tags": [
+      "lightgreen",
+      "mediumseagreen",
+      "yellowgreen"
+    ],
+    "colors": [
+      "#c8ef6e",
+      "#86e192"
+    ]
   },
   {
     "name": "Argo",
     "code": "background-image: linear-gradient(-45deg, #030119, #7304c0, #e62bb5, #fde9f7);",
-    "colors": ["#030119", "#7304c0", "#e62bb5", "#fde9f7"],
-    "tags": ["black", "darkviolet", "palevioletred", "lavenderblush"]
+    "colors": [
+      "#030119",
+      "#7304c0",
+      "#e62bb5",
+      "#fde9f7"
+    ],
+    "tags": [
+      "black",
+      "darkviolet",
+      "palevioletred",
+      "lavenderblush"
+    ]
   },
   {
-    "name": "Coral",
+    "name": "Twirl",
     "code": "background-image: linear-gradient(-45deg, #2fe5d2, #ef8400, #f10079);",
-    "colors": ["#2fe5d2", "#ef8400", "#f10079"],
-    "tags": ["turquoise", "darkorange", "deeppink"]
+    "colors": [
+      "#2fe5d2",
+      "#ef8400",
+      "#f10079"
+    ],
+    "tags": [
+      "turquoise",
+      "darkorange",
+      "deeppink"
+    ]
   },
   {
-    "name": "DeepHaze",
+    "name": "Viobl",
     "code": "background-image: linear-gradient(-225deg, #ae00ff 0%, #701cd8 48%, #3001ff 100%);",
-    "colors": ["#ae00ff", "#701cd8", "#3001ff"],
-    "tags": ["purple", "darkorchid", "blue"]
+    "colors": [
+      "#ae00ff",
+      "#701cd8",
+      "#3001ff"
+    ],
+    "tags": [
+      "purple",
+      "darkorchid",
+      "blue"
+    ]
   },
   {
-    "name": "StarBurst",
+    "name": "Starboy",
     "code": "background-image: linear-gradient(45deg, #201254 0%, #470f80 29%, #fd0c5b 67%, #fdf702 100%);",
-    "colors": ["#201254", "#470f80", "#fd0c5b", "#fdf702"],
-    "tags": ["midnightblue", "darkviolet", "red", "yellow"]
+    "colors": [
+      "#201254",
+      "#470f80",
+      "#fd0c5b",
+      "#fdf702"
+    ],
+    "tags": [
+      "midnightblue",
+      "darkviolet",
+      "red",
+      "yellow",
+      "gold"
+    ]
   },
   {
-    "name": "Aquastar",
+    "name": "Froze",
     "code": "background-image: linear-gradient(45deg, #02f1f4, #fa07fd);",
-    "colors": ["#02f1f4", "#fa07fd"],
-    "tags": ["aqua", "orchid"]
+    "colors": [
+      "#02f1f4",
+      "#fa07fd"
+    ],
+    "tags": [
+      "aqua",
+      "orchid",
+      "magenta",
+      "fuchsia"
+    ]
   },
-
   {
-    "name": "ChillFire",
-    "code": "background-image: linear-gradient(45deg, #ec3247, #0bdcd8);",
-    "colors": ["#ec3247", "#0bdcd8"],
-    "tags": ["crimson", "turquoise"]
+    "name": "Freedom",
+    "code": "background-image: linear-gradient(180deg, #0084fd, #fad800);",
+    "colors": [
+      "#0084fd",
+      "#fad800"
+    ],
+    "tags": [
+      "dodgerblue",
+      "gold",
+      "yellow"
+    ]
   },
   {
-    "name": "Sushi",
-    "code": "background-image: linear-gradient(-45deg, #ec00a6, #84ff00);",
-    "colors": ["#ec00a6", "#84ff00"],
-    "tags": ["hotpink", "lawngreen"]
+    "name": "Rainbow",
+    "code": "background-image: linear-gradient(45deg, #FA8BFF, #2BD2FF, #2BFF88);",
+    "colors": [
+      "#FA8BFF",
+      "#2BD2FF",
+      "#2BFF88"
+    ],
+    "tags": [
+      "orchid",
+      "skyblue",
+      "mediumspringgreen"
+    ]
+  },
+  {
+    "name": "Lemon",
+    "code": "background-image: linear-gradient(-45deg, #fffe00, #00ff21);",
+    "colors": [
+      "#fffe00",
+      "#00ff21"
+    ],
+    "tags": [
+      "yellow",
+      "gold",
+      "lime",
+      "green",
+      "chartreuse",
+      "lawngreen",
+      "limegreen"
+    ]
   },
   {
     "name": "Skyvi",
     "code": "background-image: linear-gradient(135deg, #6279e3 0%, #7649a4 100%);",
-    "colors": ["#6279e3", "#7649a4"],
-    "tags": ["mediumslateblue", "darkorchid"]
+    "colors": [
+      "#6279e3",
+      "#7649a4"
+    ],
+    "tags": [
+      "mediumslateblue",
+      "darkorchid"
+    ]
+  },
+  {
+    "name": "Glowz",
+    "code": "background-image: linear-gradient(0deg, #8408ff, #fd9916);",
+    "colors": [
+      "#8408ff",
+      "#fd9916"
+    ],
+    "tags": [
+      "darkviolet",
+      "orange"
+    ]
+  },
+  {
+    "name": "Wavix",
+    "code": "background-image: linear-gradient(180deg, #17e586 0%, #00a4fd 100%);",
+    "colors": [
+      "#17e586",
+      "#00a4fd"
+    ],
+    "tags": [
+      "mediumspringgreen",
+      "green",
+      "dodgerblue",
+      "deepskyblue",
+      "skyblue",
+      "lightskyblue",
+      "steelblue"
+    ]
+  },
+  {
+    "name": "Sushi",
+    "code": "background-image: linear-gradient(-45deg, #ec00a6, #84ff00);",
+    "colors": [
+      "#ec00a6",
+      "#84ff00"
+    ],
+    "tags": [
+      "hotpink",
+      "lawngreen"
+    ]
   },
   {
     "name": "Lavros",
     "code": "background-image: linear-gradient(45deg, #9782c7 0%, #efbae0 100%);",
-    "colors": ["#9782c7", "#efbae0"],
-    "tags": ["blueviolet", "pink"]
+    "colors": [
+      "#9782c7",
+      "#efbae0"
+    ],
+    "tags": [
+      "blueviolet",
+      "violet",
+      "pink",
+      "plum",
+      "thistle",
+      "lavender",
+      "mistyrose",
+      "lightpink"
+    ]
   },
   {
-    "name": "Aquant",
-    "code": "background-image: linear-gradient(180deg, #17e586 0%, #00a4fd 100%);",
-    "colors": ["#17e586", "#00a4fd"],
-    "tags": ["mediumspringgreen", "dodgerblue"]
+    "name": "Redcy",
+    "code": "background-image: linear-gradient(45deg, #ec3247, #0bdcd8);",
+    "colors": [
+      "#ec3247",
+      "#0bdcd8"
+    ],
+    "tags": [
+      "crimson",
+      "turquoise"
+    ]
+  },
+  {
+    "name": "Nitey",
+    "code": "background-image: linear-gradient(90deg, #161f23, #260371);",
+    "colors": [
+      "#161f23",
+      "#260371"
+    ],
+    "tags": [
+      "black",
+      "midnightblue",
+      "darkslateblue",
+      "darkblue",
+      "darkslategray",
+      "slategray"
+    ]
+  },
+  {
+    "name": "Blush",
+    "code": "background-image: linear-gradient(45deg, #ffd2b7, #c8ffd2);",
+    "colors": [
+      "#ffd2b7",
+      "#c8ffd2"
+    ],
+    "tags": [
+      "peachpuff",
+      "mintcream",
+      "mistyrose",
+      "green"
+    ]
+  },
+  {
+    "name": "Roset",
+    "code": "background-image: linear-gradient(135deg, #ffcdd2, #FECDFB);",
+    "colors": [
+      "#ffcdd2",
+      "#fecdfb"
+    ],
+    "tags": [
+      "lightpink",
+      "lavenderblush",
+      "pink",
+      "plum",
+      "thistle"
+    ]
+  },
+  {
+    "name": "Grove",
+    "code": "background-image: linear-gradient(90deg, #1e845a, #5bb78b);",
+    "colors": [
+      "#1e845a",
+      "#5bb78b"
+    ],
+    "tags": [
+      "seagreen",
+      "mediumaquamarine",
+      "mediumseagreen",
+      "green"
+    ]
+  },
+  {
+    "name": "Glace",
+    "code": "background-image: linear-gradient(-45deg, #96f6f8, #cdaffb);",
+    "colors": [
+      "#96f6f8",
+      "#cdaffb"
+    ],
+    "tags": [
+      "paleturquoise",
+      "plum",
+      "lavender",
+      "thistle"
+    ]
+  },
+  {
+    "name": "Sunet",
+    "code": "background-image: linear-gradient(0deg, #ff945f, #f65d61);",
+    "colors": [
+      "#ff945f",
+      "#f65d61"
+    ],
+    "tags": [
+      "sandybrown",
+      "salmon",
+      "tomato",
+      "red",
+      "orange"
+    ]
+  },
+  {
+    "name": "Minty",
+    "code": "background-image: linear-gradient(90deg, #9ffbec, #bbfadf);",
+    "colors": [
+      "#9ffbec",
+      "#bbfadf"
+    ],
+    "tags": [
+      "aquamarine",
+      "palegreen"
+    ]
+  },
+  {
+    "name": "Ocean",
+    "code": "background-image: linear-gradient(90deg, #0361fa, #5defff);",
+    "colors": [
+      "#0361fa",
+      "#5defff"
+    ],
+    "tags": [
+      "blue",
+      "lightcyan",
+      "cyan",
+      "aqua"
+    ]
+  },
+  {
+    "name": "Wavly",
+    "code": "background-image: linear-gradient(180deg, #20567d, #beddfa);",
+    "colors": [
+      "#20567d",
+      "#beddfa"
+    ],
+    "tags": [
+      "steelblue",
+      "lightblue"
+    ]
+  },
+  {
+    "name": "Misty",
+    "code": "background-image: linear-gradient(90deg, #bababa, #eaf8ff);",
+    "colors": [
+      "#bababa",
+      "#eaf8ff"
+    ],
+    "tags": [
+      "silver",
+      "aliceblue",
+      "ghostwhite",
+      "whitesmoke",
+      "white"
+    ]
+  },
+  {
+    "name": "Moxi",
+    "code": "background-image: linear-gradient(90deg, #1ba272, #95f6b9);",
+    "colors": [
+      "#1ba272",
+      "#95f6b9"
+    ],
+    "tags": [
+      "green",
+      "mediumaquamarine",
+      "mediumseagreen"
+    ]
   }
 ]

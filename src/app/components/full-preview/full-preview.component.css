@@ -38,4 +38,14 @@
   background-color: var(--primary-color);
   box-shadow: var(--main-box-shadow);
   border-radius: 40px;
+  background-image: linear-gradient(90deg, #96f6f8, #cdaffb);
+  background-image: linear-gradient(90deg, #ff945f, #f65d61);
+  background:linear-gradient(90deg, #9ffbec, #bbfadf);
+  /*background-image: linear-gradient(180deg, #9aecfd, #fba7ae);*/
+  background-image: linear-gradient(90deg, #0361fa, #5defff);
+  background-image: linear-gradient(90deg, #20567d, #beddfa);
+  background-image: linear-gradient(90deg, #bababa, #eaf8ff);
+  background-image: linear-gradient(180deg, #0084fd, #fad800);
+  background-image: linear-gradient(45deg, #FA8BFF, #2BD2FF, #2BFF88);
+  background-image: linear-gradient(90deg, #1ba272, #95f6b9);
 }

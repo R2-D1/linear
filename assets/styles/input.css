@@ -9,4 +9,8 @@
   &::placeholder {
     color: var(--accent-color);
   }
+
+  @media (max-width: 570px) {
+    font-size: 10px;
+  }
 }

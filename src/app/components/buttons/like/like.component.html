@@ -1,0 +1,8 @@
+<button
+  class="button button_icon gradient__like-btn"
+  [ngClass]="{ button_liked: gradient.liked }"
+  (click)="like()">
+  <span class="button__content">
+    <app-icon icon="like"></app-icon>
+  </span>
+</button>

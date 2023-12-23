@@ -2,6 +2,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: var(--gap);
+  padding-bottom: var(--gap);
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
 }

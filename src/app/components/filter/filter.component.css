@@ -1,18 +1,26 @@
 .filter {
-  position: sticky;
-  top: 0;
-  z-index: 5;
+  padding-top: 5px;
+  padding-bottom: 5px;
   box-shadow: var(--main-box-shadow);
   background-color: var(--accent-color);
   color: var(--primary-color);
-  padding-top: 5px;
-  padding-bottom: 5px;
+
+  @media (min-width: 768px) {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
 }
 
 .filter__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+
+  @media (max-width: 430px) {
+    flex-direction: column;
+  }
 }
 
 .filter__title {
@@ -22,13 +30,17 @@
   margin-bottom: 0;
   margin-top: 5px;
   font-size: 20px;
-  margin-left: 20px;
   line-height: 1;
 }
 
 .filter__form {
   display: flex;
   gap: 5px;
+  width: 60%;
+
+    @media (max-width: 430px) {
+        width: 100%;
+      }
 }
 
 .filter__input {

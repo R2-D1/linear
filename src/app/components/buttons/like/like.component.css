@@ -1,0 +1,7 @@
+.button {
+  display: block;
+}
+
+.button_liked {
+  color: var(--warning-color);
+}

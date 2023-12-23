@@ -2,11 +2,7 @@
   <div class="gradient__info">
     <div class="gradient__name">{{ gradient.name }}</div>
     <div class="gradient__control">
-      <button class="button button_icon gradient__like-btn" (click)="like()">
-        <span class="button__content">
-          <app-icon icon="like"></app-icon>
-        </span>
-      </button>
+      <app-like [gradient]="gradient"></app-like>
       <button class="button button_icon" (click)="showFullPreview()">
         <span class="button__content">
           <app-icon icon="expand"></app-icon>

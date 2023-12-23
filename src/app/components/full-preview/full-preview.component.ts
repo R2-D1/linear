@@ -3,11 +3,12 @@ import { IconComponent } from '../icon/icon.component';
 import { Gradient } from '../../models/gradient.model';
 import { GradientService } from '../../services/gradient.service';
 import { CopyComponent } from '../buttons/copy/copy.component';
+import { LikeComponent } from '../buttons/like/like.component';
 
 @Component({
   selector: 'app-full-preview',
   standalone: true,
-  imports: [IconComponent, CopyComponent],
+  imports: [IconComponent, CopyComponent, LikeComponent],
   templateUrl: './full-preview.component.html',
   styleUrl: './full-preview.component.css',
 })

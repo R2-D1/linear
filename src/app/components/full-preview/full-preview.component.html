@@ -3,30 +3,36 @@
     <div class="full-preview__header container">
       <div class="full-preview__name">{{ gradient.name }}</div>
       <div class="full-preview__controls">
-        <button class="button button_icon" (click)="previousGradient()">
-          <span class="button__content">
-            <app-icon icon="arrow-left"></app-icon>
-          </span>
-        </button>
-        <div class="full-preview__counter">
-          <span class="full-preview__counter-current">{{
-            currentGradientIndex + 1
-          }}</span>
-          <span class="full-preview__counter-separator">/</span>
-          <span class="full-preview__counter-total">{{ gradientsLength }}</span>
+        <div class="full-preview__navigation">
+          <button class="button button_icon" (click)="previousGradient()">
+            <span class="button__content">
+              <app-icon icon="arrow-left"></app-icon>
+            </span>
+          </button>
+          <div class="full-preview__counter">
+            <span class="full-preview__counter-current">
+              {{ currentGradientIndex + 1 }}
+            </span>
+            <span class="full-preview__counter-separator">/</span>
+            <span class="full-preview__counter-total">
+              {{ gradientsLength }}
+            </span>
+          </div>
+          <button class="button button_icon" (click)="nextGradient()">
+            <span class="button__content">
+              <app-icon icon="arrow-right"></app-icon>
+            </span>
+          </button>
         </div>
-        <button class="button button_icon" (click)="nextGradient()">
-          <span class="button__content">
-            <app-icon icon="arrow-right"></app-icon>
-          </span>
-        </button>
-        <app-copy [text]="gradient.code"></app-copy>
-        <app-like [gradient]="gradient"></app-like>
-        <button class="button button_icon" (click)="hideFullPreview()">
-          <span class="button__content">
-            <app-icon icon="close"></app-icon>
-          </span>
-        </button>
+        <div class="full-preview__actions">
+          <app-copy [text]="gradient.code"></app-copy>
+          <app-like [gradient]="gradient"></app-like>
+          <button class="button button_icon" (click)="hideFullPreview()">
+            <span class="button__content">
+              <app-icon icon="close"></app-icon>
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
